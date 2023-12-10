@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>atividade 1</title>
+    <title>Portfólio</title>
 </head>
+
 <body>
+    <header>
+        <h1>Octavio Pedro</h1>
+        <p>Desenvolvedor Web</p>
+    </header>
 
-   <img src="eu.png" alt="cara bonitão">
-
-    <h2 >Octavio Henrique De Paula Pedro</h2>
-
-    <h2 >Sistema para Internet SI</h2>
-
-    <h2 >Segundo semestre</h2>
-
-    <h2 >Primeiro ano</h2>
-
-    <h2 >Manhã</h2>
-
-    <p class="eu">Um jovem de 18 anos em busca de conhecimento da areá de TI </p>
-
-    <p class="historico">Formado no ensino medio pela Escola Técnica Estadual Doutor Adail Nunes da Silva - Taquaritinga <br>
-    Atualmente cursando SI na Fatec Taquaritinga: Faculdade de Tecnologia</p>
-    
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget({
+            rootPah: '/app',
+            personalization: 'https://vlibras.gov.br/config/default_logo.json',
+            opacity: 0.5,
+            position: 'L',
+            avatar: 'random',
+        });
+    </script>
+
+    <section id="sobre">
+
+        <h2 class="title">Sobre Mim</h2>
+        <img src="eu.png" alt="Octavio, jovem bonito de 19 anos ">
+        <p>Oi, meu nome é Octavio tenho 19 anos e moro em Taquaritinga - SP.</p>
+        <li>Curso | Sistemas para Internet | 2ºSemestre | Manhã |</li>
+    </section>
+    <hr>
+    <section id="academico">
+        <h2 class="title">Perfil Acadêmico</h2>
+        <p>Sou técnico em Informatica para internét formado pela ETEC Taquaritinga, durante meus estudos obtive
+            conhecimento em desenvolvimento web e programação. Atualmente estudo Sistemas para internet estou no
+            2ºSemestre, em dezembro completo meu primeiro ano! </p>
+    </section>
+    <hr>
+    <section id="portfolio">
+        <h2 class="title">Portfólio</h2>
+        <div class="projeto">
+            <h3 class="sub">Projeto: Escola do Quiz</h3>
+            <p>O projeto escola do quiz consiste em um site de aprendizagem voltado para ppúblico infantil, o objetivo
+                dele é ensinar as crinças enquanto elas respondem os quizzes.</p>
+        </div>
+        <hr>
+        <div class="projeto">
+            <h3 class="sub">Projeto: A Caminho da escola</h3>
+            <p>O projeto A caminho da Escola é um site gamificado para crinças nele os usuários tomam o papel da
+                personagem príncipal chamada Sara que esta a caminho de sua escola, o projeto tem em visão
+                sustentabilidade.</p>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2023 Octavio.</p>
+    </footer>
 
 </body>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget({
-      rootPah: '/app',
-      personalization: 'https://vlibras.gov.br/config/default_logo.json',
-      opacity: 0.5,
-      position: 'R',
-      avatar: 'random',
-        });</script>
-
 
 </html>
